@@ -10,7 +10,7 @@
  class ReactProject extends Component {
    render() {
      return (
-       <Text>Hello world!</Text>
+       <Text>Hello world!dkasdjasdkasjdal</Text>
      );
    }
  }
