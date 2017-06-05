@@ -4,13 +4,27 @@
  * @flow
  */
 
- import React, { Component } from 'react';
- import { AppRegistry, Text } from 'react-native';
+ import React, {
+   AppRegistry,
+   Component,
+   StyleSheet,
+   Navigator,
+   Text,
+   View
+
+ } from 'react-native';
+ 
+ import Register from './register';
+ import Login from './login';
+ import Root from './root';
+ import Home from './home';
 
  class ReactProject extends Component {
    render() {
      return (
-       <Text>Hello world!</Text>
+       <View style={styles.container}>
+         <Root/>
+         </View>
      );
    }
  }
