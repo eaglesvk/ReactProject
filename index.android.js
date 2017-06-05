@@ -4,29 +4,22 @@
  * @flow
  */
 
- import React, {
-   AppRegistry,
-   Component,
-   StyleSheet,
-   Navigator,
-   Text,
-   View
+import React, { Component } from 'react';
+import { 
+  AppRegistry,
+  StyleSheet,
+  Text,
+  View
+} from 'react-native';
 
- } from 'react-native';
- 
- import Register from './register';
- import Login from './login';
- import Root from './root';
- import Home from './home';
+import Login from './src/login';
 
- class ReactProject extends Component {
-   render() {
-     return (
-       <View style={styles.container}>
-         <Root/>
-         </View>
-     );
-   }
- }
+export default class ReactProject extends Component {
+  render(){
+    return (
+      <Login />
+    );
+  }
+}
 
 AppRegistry.registerComponent('ReactProject', () => ReactProject);
